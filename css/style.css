@@ -15,11 +15,10 @@ main {
 
 header {
     height: 9em;
-    /* margin-top: 1.5em; */
-    /* background-color: #000000; */
 }
 
 #logo {
+    width: 14%;
     padding-right: 1.2em;
     border-right: 1px solid #e5e5e5;
 }
@@ -27,6 +26,7 @@ header {
 li {
     display: inline-block;
     list-style: none;
+    font-size: .9em;
     text-transform: uppercase;
     margin-top: 2.5em;
     padding-right: 1em;
@@ -40,15 +40,28 @@ a {
     color: #878787;
 }
 
-.slider {
-    margin-top: 1.75em;
-    background-image: url(../img/banner.jpg);
+.slider,
+.overlay-slider {
+    height: 31em;
+    width: 100%;
+    border-radius: 1em;
+    color: #ffffff;
     background-size: cover;
     background-position: center;
-    height: 31em;
-    padding: 25em 35em 15em 3em;
-    color: #ffffff;
-    /* background-color: #E1D67A; */
+}
+
+.slider {
+    margin-top: 1.75em;
+    display: inline-block;
+    background-image: url(../img/banner.jpg);
+}
+
+.overlay-slider {
+    background-color: rgba(0,0,0,0.2);
+    padding: 20em 35em 0em 3em;
+}
+
+.lnk-sldr {
 }
 
 .lnk-sldr>h2,
@@ -58,18 +71,16 @@ a {
 
 .container-main {
     margin-top: 1.75em;
-    /* background-color: #0086ff; */
 }
 
 .little-header {
     margin-top: 0;
     height: 5.5em;
-    /* background-color: #abcfe7; */
 }
 
 h1 {
-    font-size: 2.5em;
-    font-weight: 600;
+    font-size: 2.2em;
+    font-weight: 700;
 }
 
 .little-header>p {
@@ -81,8 +92,6 @@ h1 {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     float: left;
-    /* height: 34em; */
-    /* background-color: #abcfe7; */
 }
 
 .sidebar {
@@ -156,9 +165,6 @@ footer {
     width: 100%;
     margin: .5em auto 0;
     line-height: 4em;
-    /* margin-top: .5em;
-    margin-bottom: 2em;
-    background-color: #8801fe; */
 }
 
 .center {
