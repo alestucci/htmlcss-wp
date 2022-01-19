@@ -14,9 +14,9 @@ main {
 }
 
 header {
+    height: 9em;
     /* margin-top: 1.5em; */
     /* background-color: #000000; */
-    height: 9em;
 }
 
 #logo {
@@ -45,10 +45,10 @@ a {
     background-image: url(../img/banner.jpg);
     background-size: cover;
     background-position: center;
-    /* background-color: #E1D67A; */
     height: 31em;
     padding: 25em 35em 15em 3em;
     color: #ffffff;
+    /* background-color: #E1D67A; */
 }
 
 .lnk-sldr>h2,
@@ -63,8 +63,8 @@ a {
 
 .little-header {
     margin-top: 0;
-    /* background-color: #abcfe7; */
     height: 5.5em;
+    /* background-color: #abcfe7; */
 }
 
 h1 {
@@ -80,9 +80,9 @@ h1 {
 .content {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
+    float: left;
     /* height: 34em; */
     /* background-color: #abcfe7; */
-    float: left;
 }
 
 .sidebar {
@@ -102,11 +102,22 @@ h1 {
 }
 
 .img-side {
+    display: inline-block;
+}
+
+.img-side,
+.overlay-side {
+    width: 100%;
     height: 13em;
     background-size: cover;
     background-position: center;
     border-radius: 1em;
     margin-bottom: 1.2em;
+    
+}
+
+.overlay-side {
+    background-color: rgba(0,0,0,0.2);
 }
 
 .left {
@@ -123,17 +134,38 @@ h3 {
 }
 
 .img-center {
-    height: 13em;
+    display: inline-block;
     background-image: url(../img/banner-2.jpg);
+}
+
+.img-center,
+.overlay-center {
+    width: 100%;
+    height: 13em;
     background-size: cover;
     background-position: center;
     border-radius: 1em;
     margin-bottom: 1.2em;
 }
 
+.overlay-center {
+    background-color: rgba(0,0,0,0.2); 
+}
+
 footer {
-    margin-top: .5em;
+    width: 100%;
+    margin: .5em auto 0;
+    line-height: 4em;
+    /* margin-top: .5em;
     margin-bottom: 2em;
-    height: 8em;
-    background-color: #8801fe;
+    background-color: #8801fe; */
+}
+
+.center {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.red {
+    color: red;
 }
